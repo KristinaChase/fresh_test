@@ -1,0 +1,48 @@
+.container {
+    height: 900px;
+    width: 900px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.card {
+    height: 500px;
+    width: 300px;
+    position: relative;
+}
+
+.part1, .part2 {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 1s;
+
+}
+
+.part1 {
+    background-color: grey;
+    z-index: 2;
+    transform: translate(0, +50%);
+}
+.content {
+    text-align: center;
+}
+.part2 {
+    background-color: aliceblue;
+    z-index: 1;
+    transform: translate(0, -50%);
+}
+
+.card:hover .part1{
+    background-color: brown;
+    transform: translate(0, 0);
+}
+
+.card:hover .part2{
+    transform: translate(0, 0);
+}

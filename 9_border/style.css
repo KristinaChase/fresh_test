@@ -1,0 +1,30 @@
+body {
+    font-size: 48px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+thead  {
+    color: white;
+    background-color: rgb(4, 57, 39);
+}
+
+tbody tr:nth-child(odd) td:nth-child(odd) {
+  background-color: darkturquoise;
+}
+tbody tr:nth-child(odd) td:nth-child(even) {
+    background-color: paleturquoise;
+}
+tbody tr:nth-child(even) td:nth-child(odd) {
+    background-color: paleturquoise;
+}
+tbody tr:nth-child(even) td:nth-child(even) {
+    background-color: white;
+}
+
+tfoot {
+    background-color: gray;
+
+      }
+
