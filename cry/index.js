@@ -310,4 +310,38 @@ const collection1 = {
 collection1.generateArray(1, 10, 20);
 collection1.setArray(100, 10, 30);
 console.log(collection1.getArray());
+// покупка (обьект). начислить 3% скидки если сумма больше 500грн, 5% если сумма больше 1000 грн
+
+objBuy = {
+    totalSum: 0,
+    sale: 0,
+    setSum: function(value) {return this.totalSum=value;},
+    addSale: function() { 
+        if(this.totalSum >= 1000){
+            this.totalSum *= 0.95;
+            this.sale = 5;
+        } else if(this.totalSum >= 500){
+            this.totalSum *= 0.97;
+            this.sale = 3;
+        } else { this.sale = 0;}
+        return this.totalSum;
+    }
+}
+
+objBuy.setSum(1000);
+objBuy.addSale();
+console.log(objBuy);
+
+
+objBuy.setSum(2000);
+objBuy.addSale();
+console.log(objBuy);
+
+objBuy.setSum(700);
+objBuy.addSale();
+console.log(objBuy);
+
+objBuy.setSum(100);
+objBuy.addSale();
+console.log(objBuy);
 */
