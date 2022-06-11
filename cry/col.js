@@ -56,3 +56,59 @@ let test = new Calc(10,20);
 test.add();
 test.answer();
 */
+class User {
+    constructor(login, password, fullname = 'uknown'){
+        this.fullname = fullname;
+        this._login = login;
+        this._password = password;
+    }
+    test(){
+        console.log(this._login, ': ', this._password);
+    }
+    set password(password){
+        this._password = password;
+    }
+    set login(login){
+        this._login = login;
+    }
+    get password(){
+        return this._password;
+    }
+    get login(){
+        return this._login;
+    }
+};
+
+let obj2 = new U
+
+class Animal {
+    constructor(name) {
+      this.speed = 0;
+      this.name = name;
+    }
+    run(speed) {
+      this.speed = speed;
+      console.log(`${this.name} бежит со скоростью ${this.speed}.`);
+    }
+    stop() {
+      this.speed = 0;
+      console.log(`${this.name} стоит.`);
+    }
+  }
+class Rabbit extends Animal {
+    constructor(name) {
+      super(name);
+      this.name = name;
+    }
+    hide() {
+      console.log(`${this.name} прячется!`);
+    }
+  };
+let Rex = new Animal("Rex");
+  Rex.run(10);
+  Rex.stop();
+
+  let krolik = new Rabbit('Krolik');
+  krolik.hide();
+  krolik.run(2);
+  krolik.stop()
