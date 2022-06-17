@@ -1,0 +1,83 @@
+/*
+FLEXBOX
+ для container
+ !!! использовать технологию для элемента только при родиделе display: flex;
+ 
+ по  ум - ось x -горизонталь
+justify-content: распределяет пространство между и вогруг элементов контейнера
+start, end, center, space-between...
+
+flex-direction (ось х, ось y)
+
+align-items выравнивает эдементы по оси (по вертикали)
+
+flex-wrap как сильно сжимать элементы и делать ли перенос на новую строку
+(no wrap, wrap, revers)
+
+align-content задает свойство как ведут себя строки в контейнере
+
+для детей элементов
+flex-grow сколько нужня для элемента свободного пространства
+коэф. увелечения
+
+flex-shrink сколько нужня для элемента свободного пространства
+коэф. уменьшения
+
+flex-basis ~= width для элемента
+auto, 0, 200px, rem, em, max-content, min-content, fil-content
+
+align-self задает конкретному элементу как себя вести
+*/
+
+.justify_content_center{
+    justify-content: center; /*позиционирование детей*/
+}
+
+.justify_content_space_between{
+    justify-content: space-between; /*позиционирование детей*/
+}
+
+.dir_row{
+    flex-direction: row;
+}
+
+.dir_col{
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 600px; */
+}
+
+.container_styles{
+    background-color: rgb(0, 183, 255);
+    height: 500px;
+}
+
+.item{
+    width: 200px;
+    height: 100px;
+    /* flex-grow: 1; по умолчанию 1 */
+}
+
+.item_styles{
+    background-color: lightgrey;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.grow1{
+    flex-grow: 1;
+}
+.grow2{
+    flex-grow: 4;
+}
+.grow3{
+    flex-grow: 5;
+}
+.grow4{
+    flex-grow: 25;
+}

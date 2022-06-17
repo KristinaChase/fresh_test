@@ -1,0 +1,71 @@
+.container{
+    width: 250px;
+    height: 180px;
+    /* background-color: dodgerblue; */
+    background-image: linear-gradient(to right, dodgerblue, rgb(30, 64, 255));
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.circle1{
+    height: 160px;
+    width: 160px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    right: -85px;
+    top: -30px;
+    /* border: 1px solid black; */
+}
+
+.circle2{
+    height: 160px;
+    width: 160px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    position: absolute; 
+    right: -15px;
+    bottom: -60px;
+    /* border: 1px solid black; */
+}
+
+.info p{
+    color: white;
+    margin-left: 10%;
+}
+
+.info{
+    padding-top: 5%;
+}
+
+.info > .name{
+    font-size: 18px;
+}
+
+.info > .namber{
+    font-size: 22px;
+    margin-top: -8px;
+}
+
+.info > .decreased{
+    font-size: 14px; 
+    margin-top: 45px;
+}
+
+.color1{
+    background-image: linear-gradient(to right, rgb(244, 30, 255), rgb(255, 30, 60));
+}
+
+.color2{
+    background-image: linear-gradient(to right, dodgerblue, rgb(30, 64, 255));
+}
+
+.color3{
+    background-image: linear-gradient(to right, rgb(49, 255, 30), rgb(195, 255, 30));
+}
+
+.cardList > li {
+    display: inline-block;
+}
+

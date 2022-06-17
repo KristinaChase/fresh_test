@@ -1,0 +1,57 @@
+.global_contain{
+    border: 2px solid red;
+    border-radius: 10px;
+    width: 270px;
+    height: 400px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_avatar{
+    border: 2px solid red;
+    border-radius: 50%;
+    background-image: url('megumin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bloc_text{
+    border: 0px solid orange;
+}
+
+.text_name{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.text_info{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: gray;
+    text-align: center;
+}
+
+.button{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    padding-top: 15px;
+    width: 120px;
+    height: 40px;
+    background-color: green;
+    border-radius: 10px;
+    border: 1px solid rgb(2, 83, 2);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,0 +1,14 @@
+.container{
+    height: auto;
+    position: relative;
+    background-color: gray;
+}
+
+.box{
+    width: 180px;
+    height: 180px;
+    background-color: blue;
+    position: relative;
+    display: inline-block;
+    margin: 0 25px;
+}

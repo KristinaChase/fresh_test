@@ -1,0 +1,13 @@
+.nav{
+    list-style-type: none;
+}
+
+ul.nav > li{
+    border: 1px solid blue;
+    background-color: orange;
+    display: inline-block;
+    font-size: 25px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+}

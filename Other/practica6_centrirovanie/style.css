@@ -1,0 +1,19 @@
+.parent{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    position: relative;
+}
+
+.children{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative; /* Если "absolute" тогда центрирование margin: auto; не работает. */
+    top: 50%; /* Веставляет по центру отнасительно верхнего края */
+    transform: translate(0, -50%); /* Здвигаем блок отнасительно своего размера на половину верх. Таким образон совместоно с top: 50%; получаем блок по центру по вертикали относительно родителя. */
+    margin: auto;
+     /*left и right выставляются явно в 0 для того чтобы работало горизантальное центрирование методом margin: auto; при  position: absolute; */
+    left: 0; 
+    right: 0; 
+}

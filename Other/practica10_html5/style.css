@@ -1,0 +1,221 @@
+:root{
+    --primary-color: white;
+    --second-color: #FA4A0C;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.logo{
+    display: inline-block;
+    margin-top: 49.5px;
+    margin-bottom: 40.27px;
+}
+
+.menu{
+    display: inline-block;
+    /* float: right; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 64px;
+}
+
+.inner-menu li{
+    margin-right: 114px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.inner-menu a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: var(--second-color);
+}
+
+.btn-container{
+    margin-top: 94px;
+}
+
+button{
+    color: white;
+    height: 68px;
+    width: 236px;
+    border-radius: 30px;
+    padding: 16px 0px;
+    font-family: Montserrat;
+
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.1;
+}
+
+.btn_1{
+    background-color: var(--second-color);
+    border: none;
+    margin-right: 35px;
+}
+
+.btn_2{
+    background: none;
+    border: 1px solid white;
+}
+
+.restApp{
+    background-image: url('img/Rectangle 48.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 0 178px;
+}
+
+.restApp h3{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+
+.restApp h1{
+    font-family: Poppins;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.restApp h4{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    margin-top: 15px;
+}  
+
+.Order_now{
+    background-image: url('img/Rectangle 47.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 146px 0 131px;
+}
+
+.Order_now > h4{
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+}
+
+.Order_now > h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+}
+
+.Order_now > div > button{
+    border-radius: 10px;
+}
+
+.product_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 0;
+}
+
+section > p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.product_container h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #FA4A0C;
+}
+.product_container h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    max-width: 561px;
+}
+
+.product_container h4{font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    max-width: 467px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 15px 50px 15px;
+}
+
+footer > div{
+    /* margin-left: 5%; */
+}
+
+footer > div > img{
+
+}
+
+.footer > p{
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-right: 5%; */
+}
