@@ -31,7 +31,7 @@ containerSecond.style.marginBottom = '20px';
 containerSecond.style.display = 'flex';
 containerSecond.style.justifyContent = 'space-between';
 
-let mon = document.createElement('p');
+/*let mon = document.createElement('p');
 let tue = document.createElement('p');
 let wed = document.createElement('p');
 let thu = document.createElement('p');
@@ -40,8 +40,8 @@ let sat = document.createElement('p');
 let sun = document.createElement('p');
 
 let list = [mon, tue, wed, thu, fri, sat, sun];
-list.forEach(el => containerSecond.append(el));
-
+list.forEach(el => containerSecond.append(el));*/
+for (i=0; i<7; i++ )  { list[i] =  document.createElement('p'); }
 list.forEach((el, i) => {
     el.style.fontSize = '35px';
     el.style.fontFamily = 'arial';
