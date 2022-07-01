@@ -1,0 +1,208 @@
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.wrapper{
+    padding: 5px;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #7aff52;
+    background-image: linear-gradient(135deg, #52ffae 25%, #2cff72 100%);
+    border: 5px solid;
+    border-image-source: linear-gradient(315deg, #a0ff52 25%, #5dff2c 100%);
+    border-image-slice: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#task{
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    border-bottom: 3px solid white;
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+button {
+    margin: 5px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(7, 236, 37);
+    border-bottom: 3px solid rgb(44, 180, 2);
+    border-right: 2px solid rgb(30, 214, 13);
+    font-size: 16px;
+    background-image: linear-gradient(to right, #08ff31 0%, #085808  51%, #73db73  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+}
+
+button:hover {
+    background-position: right center;
+    color: #fff;
+}
+
+#tasks{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+#tasks li{
+    width: 230px;
+    min-height: 300px;
+    margin: 10px 15px 10px 5px;
+    padding: 5px;
+    background-color: #7aff52;
+    background-image: linear-gradient(45deg, #269c36 25%, #0d7909 100%);
+    border: 1px solid #08ce6b;
+    position: relative;
+}
+
+.text{
+    margin-top: 5px;
+    word-wrap: break-word;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
+
+.crossOut{
+    text-decoration: line-through;
+}
+
+.textDate {
+    text-align: center;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    height: 25px;
+    padding-top: 7px;
+}
+
+.check{
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.checkCustom {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.check:checked ~ .checkbox{
+    transform: rotate(45deg);
+    width: 10px;
+    margin-left: 8px;
+    border-color: #ffffff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+}
+
+.checkbox{
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+
+.buttonEdit {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.checkBtn {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.checkBtn:checked ~ .spanBtn {
+    color: rgb(255, 255, 255);
+    animation-name: button-active;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+}
+
+.spanBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+    border: 1px solid rgb(255, 255, 255);
+    border-bottom: 1.5px solid rgb(255, 255, 255);
+    border-right: 1.5px solid rgb(255, 252, 252);
+    border-radius: 4px;
+    background-color: #0be21d;
+    transition: all 200ms;
+    cursor: pointer;
+    color: rgba(62, 253, 14, 0.795);
+}
+
+@keyframes button-active{
+    0%{
+        border-bottom: 1.5px solid rgb(218, 165, 19);
+        border-right: 1.5px solid rgb(177, 223, 10);
+    }
+    50%{
+        border-bottom: 1px solid rgb(213, 255, 27);
+        border-right: 1px solid rgb(236, 165, 11);
+    }
+    100%{
+        border-bottom: 1.5px solid rgb(255, 251, 37);
+        border-right: 1.5px solid rgb(248, 186, 14);
+    }
+}
