@@ -32,11 +32,10 @@ body {
     justify-content: center;
     transition: 1s;
 }
-
 .min-size {
     filter: sepia(80%);
     width: 200px;
-    height: 900px;
+    height: 850px;
     margin-left: 10px;
     border-radius: 30px;
     overflow: hidden;
@@ -60,7 +59,7 @@ body {
 .full-size {
     filter: none;
     width: 600px;
-    height: 900px;
+    height: 850px;
     color: rgb(240, 255, 255);
 }
 
