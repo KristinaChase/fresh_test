@@ -1,4 +1,3 @@
-/*Обнуление*/
 *{padding:0;margin:0;border:0;}
 *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
 :focus,:active{outline:none;}
@@ -14,7 +13,6 @@ a:hover{text-decoration:none;}
 ul li{list-style:none;}
 img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
-/*--------------------*/
 
 :root{
     --main-height: 100vh;
@@ -107,15 +105,15 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 2.668vh;
-    color: green;
+    color: gray;
     transition: 200ms;
 }
 .arrow:hover {
-    color: orange;
+    color: green;
     font-size: 2.988vh;
 }
 .arrow:active {
-    color: orangered;
+    color: rgb(3, 3, 3);
     font-size: 2.668vh;
 }
 
